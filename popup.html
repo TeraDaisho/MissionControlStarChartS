@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control: Star Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cockpit-container">
+        <header class="status-display">
+            <div class="scan-status" id="scan-status">INITIATING SCAN...</div>
+            <div class="system-tag">V6.5 STAR CHART</div>
+        </header>
+
+        <main class="star-list-container">
+            <div id="star-cards" class="star-cards">
+                <!-- Star Cards will be injected here -->
+            </div>
+        </main>
+
+        <footer class="action-panel">
+            <button id="scan-btn" class="neon-btn neon-blue">SCAN</button>
+            <button id="archive-btn" class="neon-btn neon-purple">ARCHIVE</button>
+            <button id="beam-btn" class="neon-btn neon-green">BEAM</button>
+        </footer>
+    </div>
+    <script src="utils.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

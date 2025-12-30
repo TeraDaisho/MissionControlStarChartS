@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Mission Control: Star Chart",
+    "version": "1.0.0",
+    "description": "Space Brothers themed tab manager for NotebookLM. Beam URLs to the cockpit.",
+    "permissions": [
+        "tabs",
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://notebooklm.google.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://notebooklm.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
